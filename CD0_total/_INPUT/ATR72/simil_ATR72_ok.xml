@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cpacs>
+   <header>
+      <name>sumo Model for CPACS 2.0</name>
+      <description>header information need be changed for users' convenience</description>
+      <creator>your name goes here</creator>
+      <timestamp>29-Jan-2016</timestamp>
+      <cpacsVersion>2.0</cpacsVersion>
+   </header>
+   <vehicles>
+      <aircraft>
+         <model uID="simil_ATR72_ok">
+            <name>simil_ATR72_okfor CPACS 2.0</name>
+            <description>cpacs model converted by smx2cpacs</description>
+            <reference>
+               <area>1</area>
+               <length>1</length>
+               <point>
+                  <x>0</x>
+                  <y>0</y>
+                  <z>0</z>
+               </point>
+            </reference>
+            <wings>
+               <wing symmetry="x-z-plane" uID="MainWingID">
+                  <name>MainWing</name>
+                  <description>imported from sumo template model</description>
+                  <transformation>
+                     <scaling>
+                        <x>1</x>
+                        <y>1</y>
+                        <z>1</z>
+                     </scaling>
+                     <rotation>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                     </rotation>
+                     <translation refType="absGlobal">
+                        <x>10</x>
+                        <y>0</y>
+                        <z>1.35</z>
+                     </translation>
+                  </transformation>
+                  <sections>
+                     <section uID="MainWing_CentralSectionID">
+                        <name>MainWing_CentralSection</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="MainWing_CentralSection_Section1IDElement1">
+                              <name>MainWing_CentralSection_Section1</name>
+                              <airfoilUID>MainWing_NACA 33015_1</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>2.5</x>
+                                    <y>1</y>
+                                    <z>2.5</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>3</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="MainWing_kinkSectionID">
+                        <name>MainWing_kinkSection</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="MainWing_kinkSection_Section2IDElement1">
+                              <name>MainWing_kinkSection_Section2</name>
+                              <airfoilUID>MainWing_NACA 2315_2</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>2.57</x>
+                                    <y>1</y>
+                                    <z>2.57</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0</x>
+                                    <y>4.75</y>
+                                    <z>0</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="MainWing_tipSectionID">
+                        <name>MainWing_tipSection</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="MainWing_tipSection_Section3IDElement1">
+                              <name>MainWing_tipSection_Section3</name>
+                              <airfoilUID>MainWing_NACA 2315_3</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1.4</x>
+                                    <y>1</y>
+                                    <z>1.4</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0.5</x>
+                                    <y>13.5</y>
+                                    <z>0</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                  </sections>
+                  <positionings>
+                     <positioning uID="MainWing_Positioning1ID">
+                        <name>MainWing_Positioning1</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <toSectionUID>MainWing_CentralSectionID</toSectionUID>
+                     </positioning>
+                     <positioning uID="MainWing_Positioning2ID">
+                        <name>MainWing_Positioning2</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>MainWing_CentralSectionID</fromSectionUID>
+                        <toSectionUID>MainWing_kinkSectionID</toSectionUID>
+                     </positioning>
+                     <positioning uID="MainWing_Positioning3ID">
+                        <name>MainWing_Positioning3</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>MainWing_kinkSectionID</fromSectionUID>
+                        <toSectionUID>MainWing_tipSectionID</toSectionUID>
+                     </positioning>
+                  </positionings>
+                  <segments>
+                     <segment uID="MainWing_Segment2ID">
+                        <name>MainWing_Segment2</name>
+                        <description>Segment formMainWing_CentralSection_Section1IDElement1-MainWing_kinkSection_Section2IDElement1</description>
+                        <fromElementUID>MainWing_CentralSection_Section1IDElement1</fromElementUID>
+                        <toElementUID>MainWing_kinkSection_Section2IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="MainWing_Segment3ID">
+                        <name>MainWing_Segment3</name>
+                        <description>Segment formMainWing_kinkSection_Section2IDElement1-MainWing_tipSection_Section3IDElement1</description>
+                        <fromElementUID>MainWing_kinkSection_Section2IDElement1</fromElementUID>
+                        <toElementUID>MainWing_tipSection_Section3IDElement1</toElementUID>
+                     </segment>
+                  </segments>
+               </wing>
+               <wing symmetry="x-z-plane" uID="HorizontalTailID">
+                  <name>HorizontalTail</name>
+                  <description>imported from sumo template model</description>
+                  <transformation>
+                     <scaling>
+                        <x>1</x>
+                        <y>1</y>
+                        <z>1</z>
+                     </scaling>
+                     <rotation>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                     </rotation>
+                     <translation refType="absGlobal">
+                        <x>24.9</x>
+                        <y>0</y>
+                        <z>5.2</z>
+                     </translation>
+                  </transformation>
+                  <sections>
+                     <section uID="HorizontalTail_CentralSectionID">
+                        <name>HorizontalTail_CentralSection</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="HorizontalTail_CentralSection_Section1IDElement1">
+                              <name>HorizontalTail_CentralSection_Section1</name>
+                              <airfoilUID>HorizontalTail_NACA 65-013_1</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1.73</x>
+                                    <y>1</y>
+                                    <z>1.73</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="HorizontalTail_RightTipID">
+                        <name>HorizontalTail_RightTip</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="HorizontalTail_RightTip_Section2IDElement1">
+                              <name>HorizontalTail_RightTip_Section2</name>
+                              <airfoilUID>HorizontalTail_NACA 65-011_2</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>0.893</x>
+                                    <y>1</y>
+                                    <z>0.893</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0.6</x>
+                                    <y>4.05</y>
+                                    <z>0</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                  </sections>
+                  <positionings>
+                     <positioning uID="HorizontalTail_Positioning1ID">
+                        <name>HorizontalTail_Positioning1</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <toSectionUID>HorizontalTail_CentralSectionID</toSectionUID>
+                     </positioning>
+                     <positioning uID="HorizontalTail_Positioning2ID">
+                        <name>HorizontalTail_Positioning2</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>HorizontalTail_CentralSectionID</fromSectionUID>
+                        <toSectionUID>HorizontalTail_RightTipID</toSectionUID>
+                     </positioning>
+                  </positionings>
+                  <segments>
+                     <segment uID="HorizontalTail_Segment2ID">
+                        <name>HorizontalTail_Segment2</name>
+                        <description>Segment formHorizontalTail_CentralSection_Section1IDElement1-HorizontalTail_RightTip_Section2IDElement1</description>
+                        <fromElementUID>HorizontalTail_CentralSection_Section1IDElement1</fromElementUID>
+                        <toElementUID>HorizontalTail_RightTip_Section2IDElement1</toElementUID>
+                     </segment>
+                  </segments>
+               </wing>
+               <wing uID="VerticalTailID">
+                  <name>VerticalTail</name>
+                  <description>imported from sumo template model</description>
+                  <transformation>
+                     <scaling>
+                        <x>1</x>
+                        <y>1</y>
+                        <z>1</z>
+                     </scaling>
+                     <rotation>
+                        <x>0</x>
+                        <y>2</y>
+                        <z>0</z>
+                     </rotation>
+                     <translation refType="absGlobal">
+                        <x>24</x>
+                        <y>0</y>
+                        <z>1.35</z>
+                     </translation>
+                  </transformation>
+                  <sections>
+                     <section uID="VerticalTail_RootID">
+                        <name>VerticalTail_Root</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="VerticalTail_Root_Section1IDElement1">
+                              <name>VerticalTail_Root_Section1</name>
+                              <airfoilUID>VerticalTail_LS(1)-0013_1</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>7.36</x>
+                                    <y>1</y>
+                                    <z>7.36</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>90</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>-5.2</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="VerticalTail_FinKink1ID">
+                        <name>VerticalTail_FinKink1</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="VerticalTail_FinKink1_Section2IDElement1">
+                              <name>VerticalTail_FinKink1_Section2</name>
+                              <airfoilUID>VerticalTail_LS(1)-0013_2</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>4</x>
+                                    <y>1</y>
+                                    <z>4</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>90</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>-1.7</x>
+                                    <y>0</y>
+                                    <z>1.2</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="VerticalTail_FinKink2ID">
+                        <name>VerticalTail_FinKink2</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="VerticalTail_FinKink2_Section3IDElement1">
+                              <name>VerticalTail_FinKink2_Section3</name>
+                              <airfoilUID>VerticalTail_LS(1)-0013_3</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>2.4</x>
+                                    <y>1</y>
+                                    <z>2.4</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>90</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0.2</x>
+                                    <y>0</y>
+                                    <z>3.2</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="VerticalTail_FinKink3ID">
+                        <name>VerticalTail_FinKink3</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="VerticalTail_FinKink3_Section4IDElement1">
+                              <name>VerticalTail_FinKink3_Section4</name>
+                              <airfoilUID>VerticalTail_LS(1)-0013_4</airfoilUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>2.14</x>
+                                    <y>1</y>
+                                    <z>2.14</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>90</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0.65</x>
+                                    <y>0</y>
+                                    <z>4.4</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                  </sections>
+                  <positionings>
+                     <positioning uID="VerticalTail_Positioning1ID">
+                        <name>VerticalTail_Positioning1</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <toSectionUID>VerticalTail_RootID</toSectionUID>
+                     </positioning>
+                     <positioning uID="VerticalTail_Positioning2ID">
+                        <name>VerticalTail_Positioning2</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>90</dihedralAngle>
+                        <fromSectionUID>VerticalTail_RootID</fromSectionUID>
+                        <toSectionUID>VerticalTail_FinKink1ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="VerticalTail_Positioning3ID">
+                        <name>VerticalTail_Positioning3</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>90</dihedralAngle>
+                        <fromSectionUID>VerticalTail_FinKink1ID</fromSectionUID>
+                        <toSectionUID>VerticalTail_FinKink2ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="VerticalTail_Positioning4ID">
+                        <name>VerticalTail_Positioning4</name>
+                        <length>0</length>
+                        <sweepAngle>0</sweepAngle>
+                        <dihedralAngle>90</dihedralAngle>
+                        <fromSectionUID>VerticalTail_FinKink2ID</fromSectionUID>
+                        <toSectionUID>VerticalTail_FinKink3ID</toSectionUID>
+                     </positioning>
+                  </positionings>
+                  <segments>
+                     <segment uID="VerticalTail_Segment2ID">
+                        <name>VerticalTail_Segment2</name>
+                        <description>Segment formVerticalTail_Root_Section1IDElement1-VerticalTail_FinKink1_Section2IDElement1</description>
+                        <fromElementUID>VerticalTail_Root_Section1IDElement1</fromElementUID>
+                        <toElementUID>VerticalTail_FinKink1_Section2IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="VerticalTail_Segment3ID">
+                        <name>VerticalTail_Segment3</name>
+                        <description>Segment formVerticalTail_FinKink1_Section2IDElement1-VerticalTail_FinKink2_Section3IDElement1</description>
+                        <fromElementUID>VerticalTail_FinKink1_Section2IDElement1</fromElementUID>
+                        <toElementUID>VerticalTail_FinKink2_Section3IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="VerticalTail_Segment4ID">
+                        <name>VerticalTail_Segment4</name>
+                        <description>Segment formVerticalTail_FinKink2_Section3IDElement1-VerticalTail_FinKink3_Section4IDElement1</description>
+                        <fromElementUID>VerticalTail_FinKink2_Section3IDElement1</fromElementUID>
+                        <toElementUID>VerticalTail_FinKink3_Section4IDElement1</toElementUID>
+                     </segment>
+                  </segments>
+               </wing>
+            </wings>
+            <fuselages>
+               <fuselage uID="FuselageID">
+                  <name>Fuselage</name>
+                  <description>body skeleton imported from sumo model</description>
+                  <transformation>
+                     <translation refType="absGlobal">
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                     </translation>
+                     <rotation>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                     </rotation>
+                     <scaling>
+                        <x>1</x>
+                        <y>1</y>
+                        <z>1</z>
+                     </scaling>
+                  </transformation>
+                  <sections>
+                     <section uID="1_FuselageFrame1ID">
+                        <name>1_FuselageFrame1</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame1_Section1IDElement1">
+                              <name>1_FuselageFrame1_Section1</name>
+                              <profileUID>1_FuselageFrame1_1</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>0.0505</y>
+                                    <z>0.0505</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>-0.15</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame21ID">
+                        <name>1_FuselageFrame21</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame21_Section2IDElement1">
+                              <name>1_FuselageFrame21_Section2</name>
+                              <profileUID>1_FuselageFrame21_2</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>0.62637</y>
+                                    <z>0.56645</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>0.52936</x>
+                                    <y>0</y>
+                                    <z>-0.11216</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame41ID">
+                        <name>1_FuselageFrame41</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame41_Section3IDElement1">
+                              <name>1_FuselageFrame41_Section3</name>
+                              <profileUID>1_FuselageFrame41_3</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.0387</y>
+                                    <z>0.82648</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>1.1534</x>
+                                    <y>0</y>
+                                    <z>-0.046456</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame3ID">
+                        <name>1_FuselageFrame3</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame3_Section4IDElement1">
+                              <name>1_FuselageFrame3_Section4</name>
+                              <profileUID>1_FuselageFrame3_4</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.2831</y>
+                                    <z>1.092</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>1.6724</x>
+                                    <y>0</y>
+                                    <z>0.12581</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrameX234ID">
+                        <name>1_FuselageFrameX234</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrameX234_Section5IDElement1">
+                              <name>1_FuselageFrameX234_Section5</name>
+                              <profileUID>1_FuselageFrameX234_5</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.3999</y>
+                                    <z>1.2402</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>2.35</x>
+                                    <y>0</y>
+                                    <z>0.20018</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame5ID">
+                        <name>1_FuselageFrame5</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame5_Section6IDElement1">
+                              <name>1_FuselageFrame5_Section6</name>
+                              <profileUID>1_FuselageFrame5_6</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.42</y>
+                                    <z>1.305</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>3.51</x>
+                                    <y>0</y>
+                                    <z>0.224</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrameX368ID">
+                        <name>1_FuselageFrameX368</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrameX368_Section7IDElement1">
+                              <name>1_FuselageFrameX368_Section7</name>
+                              <profileUID>1_FuselageFrameX368_7</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.43</y>
+                                    <z>1.32</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>4.58</x>
+                                    <y>0</y>
+                                    <z>0.244</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame6ID">
+                        <name>1_FuselageFrame6</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame6_Section8IDElement1">
+                              <name>1_FuselageFrame6_Section8</name>
+                              <profileUID>1_FuselageFrame6_8</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.43</y>
+                                    <z>1.32</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>6.2</x>
+                                    <y>0</y>
+                                    <z>0.267</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrameX1134ID">
+                        <name>1_FuselageFrameX1134</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrameX1134_Section9IDElement1">
+                              <name>1_FuselageFrameX1134_Section9</name>
+                              <profileUID>1_FuselageFrameX1134_9</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.43</y>
+                                    <z>1.32</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>10.5</x>
+                                    <y>0</y>
+                                    <z>0.267</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame507ID">
+                        <name>1_FuselageFrame507</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame507_Section10IDElement1">
+                              <name>1_FuselageFrame507_Section10</name>
+                              <profileUID>1_FuselageFrame507_10</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.43</y>
+                                    <z>1.32</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>13.8</x>
+                                    <y>0</y>
+                                    <z>0.267</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame11ID">
+                        <name>1_FuselageFrame11</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame11_Section11IDElement1">
+                              <name>1_FuselageFrame11_Section11</name>
+                              <profileUID>1_FuselageFrame11_11</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.43</y>
+                                    <z>1.32</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>17</x>
+                                    <y>0</y>
+                                    <z>0.267</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrameX2400ID">
+                        <name>1_FuselageFrameX2400</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrameX2400_Section12IDElement1">
+                              <name>1_FuselageFrameX2400_Section12</name>
+                              <profileUID>1_FuselageFrameX2400_12</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.43</y>
+                                    <z>1.32</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>18.8</x>
+                                    <y>0</y>
+                                    <z>0.267</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame12ID">
+                        <name>1_FuselageFrame12</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame12_Section13IDElement1">
+                              <name>1_FuselageFrame12_Section13</name>
+                              <profileUID>1_FuselageFrame12_13</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>1.205</y>
+                                    <z>1.12</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>21.1</x>
+                                    <y>0</y>
+                                    <z>0.416</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame13ID">
+                        <name>1_FuselageFrame13</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame13_Section14IDElement1">
+                              <name>1_FuselageFrame13_Section14</name>
+                              <profileUID>1_FuselageFrame13_14</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>0.695</y>
+                                    <z>0.625</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>24.6</x>
+                                    <y>0</y>
+                                    <z>0.771</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame945ID">
+                        <name>1_FuselageFrame945</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame945_Section15IDElement1">
+                              <name>1_FuselageFrame945_Section15</name>
+                              <profileUID>1_FuselageFrame945_15</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>0.40404</y>
+                                    <z>0.30517</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>26.4649</x>
+                                    <y>0</y>
+                                    <z>0.99487</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                     <section uID="1_FuselageFrame14ID">
+                        <name>1_FuselageFrame14</name>
+                        <transformation>
+                           <scaling>
+                              <x>1</x>
+                              <y>1</y>
+                              <z>1</z>
+                           </scaling>
+                           <rotation>
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </rotation>
+                           <translation refType="absGlobal">
+                              <x>0</x>
+                              <y>0</y>
+                              <z>0</z>
+                           </translation>
+                        </transformation>
+                        <elements>
+                           <element uID="1_FuselageFrame14_Section16IDElement1">
+                              <name>1_FuselageFrame14_Section16</name>
+                              <profileUID>1_FuselageFrame14_16</profileUID>
+                              <transformation>
+                                 <scaling>
+                                    <x>1</x>
+                                    <y>0.04385</y>
+                                    <z>0.065</z>
+                                 </scaling>
+                                 <rotation>
+                                    <x>0</x>
+                                    <y>0</y>
+                                    <z>0</z>
+                                 </rotation>
+                                 <translation refType="absGlobal">
+                                    <x>27.2</x>
+                                    <y>0</y>
+                                    <z>1.1</z>
+                                 </translation>
+                              </transformation>
+                           </element>
+                        </elements>
+                     </section>
+                  </sections>
+                  <positionings>
+                     <positioning uID="Fuselage_Positioning1ID">
+                        <name>Fuselage_Positioning1</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <toSectionUID>1_FuselageFrame1ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning2ID">
+                        <name>Fuselage_Positioning2</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame1ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame21ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning3ID">
+                        <name>Fuselage_Positioning3</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame21ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame41ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning4ID">
+                        <name>Fuselage_Positioning4</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame41ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame3ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning5ID">
+                        <name>Fuselage_Positioning5</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame3ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrameX234ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning6ID">
+                        <name>Fuselage_Positioning6</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrameX234ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame5ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning7ID">
+                        <name>Fuselage_Positioning7</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame5ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrameX368ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning8ID">
+                        <name>Fuselage_Positioning8</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrameX368ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame6ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning9ID">
+                        <name>Fuselage_Positioning9</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame6ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrameX1134ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning10ID">
+                        <name>Fuselage_Positioning10</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrameX1134ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame507ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning11ID">
+                        <name>Fuselage_Positioning11</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame507ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame11ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning12ID">
+                        <name>Fuselage_Positioning12</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame11ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrameX2400ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning13ID">
+                        <name>Fuselage_Positioning13</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrameX2400ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame12ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning14ID">
+                        <name>Fuselage_Positioning14</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame12ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame13ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning15ID">
+                        <name>Fuselage_Positioning15</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame13ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame945ID</toSectionUID>
+                     </positioning>
+                     <positioning uID="Fuselage_Positioning16ID">
+                        <name>Fuselage_Positioning16</name>
+                        <length>0</length>
+                        <sweepAngle>90</sweepAngle>
+                        <dihedralAngle>0</dihedralAngle>
+                        <fromSectionUID>1_FuselageFrame945ID</fromSectionUID>
+                        <toSectionUID>1_FuselageFrame14ID</toSectionUID>
+                     </positioning>
+                  </positionings>
+                  <segments>
+                     <segment uID="Fuselage_Segment2ID">
+                        <name>Fuselage_Segment2</name>
+                        <description>Segment form1_FuselageFrame1_Section1IDElement1-1_FuselageFrame21_Section2IDElement1</description>
+                        <fromElementUID>1_FuselageFrame1_Section1IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame21_Section2IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment3ID">
+                        <name>Fuselage_Segment3</name>
+                        <description>Segment form1_FuselageFrame21_Section2IDElement1-1_FuselageFrame41_Section3IDElement1</description>
+                        <fromElementUID>1_FuselageFrame21_Section2IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame41_Section3IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment4ID">
+                        <name>Fuselage_Segment4</name>
+                        <description>Segment form1_FuselageFrame41_Section3IDElement1-1_FuselageFrame3_Section4IDElement1</description>
+                        <fromElementUID>1_FuselageFrame41_Section3IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame3_Section4IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment5ID">
+                        <name>Fuselage_Segment5</name>
+                        <description>Segment form1_FuselageFrame3_Section4IDElement1-1_FuselageFrameX234_Section5IDElement1</description>
+                        <fromElementUID>1_FuselageFrame3_Section4IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrameX234_Section5IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment6ID">
+                        <name>Fuselage_Segment6</name>
+                        <description>Segment form1_FuselageFrameX234_Section5IDElement1-1_FuselageFrame5_Section6IDElement1</description>
+                        <fromElementUID>1_FuselageFrameX234_Section5IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame5_Section6IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment7ID">
+                        <name>Fuselage_Segment7</name>
+                        <description>Segment form1_FuselageFrame5_Section6IDElement1-1_FuselageFrameX368_Section7IDElement1</description>
+                        <fromElementUID>1_FuselageFrame5_Section6IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrameX368_Section7IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment8ID">
+                        <name>Fuselage_Segment8</name>
+                        <description>Segment form1_FuselageFrameX368_Section7IDElement1-1_FuselageFrame6_Section8IDElement1</description>
+                        <fromElementUID>1_FuselageFrameX368_Section7IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame6_Section8IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment9ID">
+                        <name>Fuselage_Segment9</name>
+                        <description>Segment form1_FuselageFrame6_Section8IDElement1-1_FuselageFrameX1134_Section9IDElement1</description>
+                        <fromElementUID>1_FuselageFrame6_Section8IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrameX1134_Section9IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment10ID">
+                        <name>Fuselage_Segment10</name>
+                        <description>Segment form1_FuselageFrameX1134_Section9IDElement1-1_FuselageFrame507_Section10IDElement1</description>
+                        <fromElementUID>1_FuselageFrameX1134_Section9IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame507_Section10IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment11ID">
+                        <name>Fuselage_Segment11</name>
+                        <description>Segment form1_FuselageFrame507_Section10IDElement1-1_FuselageFrame11_Section11IDElement1</description>
+                        <fromElementUID>1_FuselageFrame507_Section10IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame11_Section11IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment12ID">
+                        <name>Fuselage_Segment12</name>
+                        <description>Segment form1_FuselageFrame11_Section11IDElement1-1_FuselageFrameX2400_Section12IDElement1</description>
+                        <fromElementUID>1_FuselageFrame11_Section11IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrameX2400_Section12IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment13ID">
+                        <name>Fuselage_Segment13</name>
+                        <description>Segment form1_FuselageFrameX2400_Section12IDElement1-1_FuselageFrame12_Section13IDElement1</description>
+                        <fromElementUID>1_FuselageFrameX2400_Section12IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame12_Section13IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment14ID">
+                        <name>Fuselage_Segment14</name>
+                        <description>Segment form1_FuselageFrame12_Section13IDElement1-1_FuselageFrame13_Section14IDElement1</description>
+                        <fromElementUID>1_FuselageFrame12_Section13IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame13_Section14IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment15ID">
+                        <name>Fuselage_Segment15</name>
+                        <description>Segment form1_FuselageFrame13_Section14IDElement1-1_FuselageFrame945_Section15IDElement1</description>
+                        <fromElementUID>1_FuselageFrame13_Section14IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame945_Section15IDElement1</toElementUID>
+                     </segment>
+                     <segment uID="Fuselage_Segment16ID">
+                        <name>Fuselage_Segment16</name>
+                        <description>Segment form1_FuselageFrame945_Section15IDElement1-1_FuselageFrame14_Section16IDElement1</description>
+                        <fromElementUID>1_FuselageFrame945_Section15IDElement1</fromElementUID>
+                        <toElementUID>1_FuselageFrame14_Section16IDElement1</toElementUID>
+                     </segment>
+                  </segments>
+               </fuselage>
+            </fuselages>
+         </model>
+      </aircraft>
+      <profiles>
+         <wingAirfoils>
+            <wingAirfoil uID="MainWing_NACA 33015_1">
+               <name>NACA 33015</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.99293; 0.98459; 0.97376; 0.95935; 0.94042; 0.91627; 0.88640; 0.85061; 0.80896; 0.76180; 0.70972; 0.65354; 0.59429; 0.53311; 0.47126; 0.41001; 0.35061; 0.29423; 0.24189; 0.19433; 0.15024; 0.11056; 0.07690; 0.05006; 0.02993; 0.01567; 0.00608; 0.00005; 0.00000; 0.01417; 0.02492; 0.03712; 0.05185; 0.06978; 0.09152; 0.11792; 0.15019; 0.18980; 0.23700; 0.28927; 0.34569; 0.40523; 0.46673; 0.52891; 0.59047; 0.65016; 0.70678; 0.75931; 0.80691; 0.84896; 0.88512; 0.91531; 0.93973; 0.95887; 0.97345; 0.98440; 0.99285; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector">-0.00000; 0.00152; 0.00330; 0.00559; 0.00859; 0.01246; 0.01729; 0.02310; 0.02983; 0.03736; 0.04550; 0.05403; 0.06267; 0.07110; 0.07898; 0.08596; 0.09171; 0.09593; 0.09841; 0.09904; 0.09784; 0.09442; 0.08782; 0.07816; 0.06650; 0.05417; 0.04220; 0.03097; 0.01979; 0.00000;-0.01353;-0.01792;-0.02127;-0.02430;-0.02734;-0.03069;-0.03462;-0.03926;-0.04432;-0.04865;-0.05149;-0.05275;-0.05247;-0.05078;-0.04791;-0.04409;-0.03960;-0.03470;-0.02964;-0.02463;-0.01988;-0.01553;-0.01171;-0.00849;-0.00588;-0.00384;-0.00227;-0.00105; 0.00000</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="MainWing_NACA 2315_2">
+               <name>NACA 2315</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.99296; 0.98465; 0.97386; 0.95950; 0.94063; 0.91651; 0.88668; 0.85090; 0.80922; 0.76197; 0.70973; 0.65332; 0.59375; 0.53220; 0.46994; 0.40825; 0.34844; 0.29147; 0.23746; 0.18866; 0.14578; 0.10920; 0.07897; 0.05483; 0.03623; 0.02235; 0.01222; 0.00478; 0.00000; 0.00945; 0.01879; 0.03044; 0.04555; 0.06501; 0.08946; 0.11929; 0.15465; 0.19547; 0.24143; 0.29202; 0.34786; 0.40699; 0.46805; 0.52981; 0.59100; 0.65038; 0.70677; 0.75914; 0.80665; 0.84867; 0.88484; 0.91506; 0.93953; 0.95872; 0.97335; 0.98434; 0.99282; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector">-0.00000; 0.00169; 0.00366; 0.00619; 0.00950; 0.01374; 0.01901; 0.02530; 0.03251; 0.04046; 0.04891; 0.05757; 0.06609; 0.07412; 0.08129; 0.08724; 0.09165; 0.09429; 0.09498; 0.09305; 0.08844; 0.08171; 0.07345; 0.06432; 0.05486; 0.04555; 0.03662; 0.02801; 0.01888; 0.00000;-0.01700;-0.02398;-0.02989;-0.03539;-0.04048;-0.04501;-0.04879;-0.05168;-0.05362;-0.05468;-0.05501;-0.05448;-0.05260;-0.04957;-0.04564;-0.04110;-0.03620;-0.03117;-0.02622;-0.02152;-0.01718;-0.01331;-0.00997;-0.00719;-0.00496;-0.00323;-0.00191;-0.00088; 0.00000</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="MainWing_NACA 2315_3">
+               <name>NACA 2315</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.99296; 0.98465; 0.97386; 0.95950; 0.94063; 0.91651; 0.88668; 0.85090; 0.80922; 0.76197; 0.70973; 0.65332; 0.59375; 0.53220; 0.46994; 0.40825; 0.34844; 0.29147; 0.23746; 0.18866; 0.14578; 0.10920; 0.07897; 0.05483; 0.03623; 0.02235; 0.01222; 0.00478; 0.00000; 0.00945; 0.01879; 0.03044; 0.04555; 0.06501; 0.08946; 0.11929; 0.15465; 0.19547; 0.24143; 0.29202; 0.34786; 0.40699; 0.46805; 0.52981; 0.59100; 0.65038; 0.70677; 0.75914; 0.80665; 0.84867; 0.88484; 0.91506; 0.93953; 0.95872; 0.97335; 0.98434; 0.99282; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector">-0.00000; 0.00169; 0.00366; 0.00619; 0.00950; 0.01374; 0.01901; 0.02530; 0.03251; 0.04046; 0.04891; 0.05757; 0.06609; 0.07412; 0.08129; 0.08724; 0.09165; 0.09429; 0.09498; 0.09305; 0.08844; 0.08171; 0.07345; 0.06432; 0.05486; 0.04555; 0.03662; 0.02801; 0.01888; 0.00000;-0.01700;-0.02398;-0.02989;-0.03539;-0.04048;-0.04501;-0.04879;-0.05168;-0.05362;-0.05468;-0.05501;-0.05448;-0.05260;-0.04957;-0.04564;-0.04110;-0.03620;-0.03117;-0.02622;-0.02152;-0.01718;-0.01331;-0.00997;-0.00719;-0.00496;-0.00323;-0.00191;-0.00088; 0.00000</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="HorizontalTail_NACA 65-013_1">
+               <name>NACA 65-013</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 0.99975; 0.98207; 0.96299; 0.94238; 0.92011; 0.89605; 0.87005; 0.84193; 0.81151; 0.77860; 0.74296; 0.70437; 0.66257; 0.61725; 0.56810; 0.51478; 0.45695; 0.39645; 0.33970; 0.29057; 0.24807; 0.21130; 0.17952; 0.15204; 0.12830; 0.10780; 0.09011; 0.07484; 0.06168; 0.05035; 0.04060; 0.03223; 0.02505; 0.01891; 0.01271; 0.00685; 0.00208; 0.00000; 0.00208; 0.00684; 0.01270; 0.01891; 0.02505; 0.03222; 0.04060; 0.05034; 0.06168; 0.07484; 0.09011; 0.10780; 0.12830; 0.15204; 0.17951; 0.21130; 0.24807; 0.29057; 0.33970; 0.39645; 0.45694; 0.51478; 0.56810; 0.61724; 0.66256; 0.70437; 0.74296; 0.77859; 0.81151; 0.84193; 0.87005; 0.89605; 0.92011; 0.94237; 0.96299; 0.98207; 0.99975</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector"> 0.00000; 0.00084; 0.00245; 0.00466; 0.00742; 0.01070; 0.01446; 0.01871; 0.02340; 0.02851; 0.03397; 0.03969; 0.04557; 0.05137; 0.05679; 0.06133; 0.06423; 0.06496; 0.06373; 0.06141; 0.05843; 0.05509; 0.05157; 0.04799; 0.04443; 0.04095; 0.03757; 0.03434; 0.03125; 0.02831; 0.02550; 0.02283; 0.02031; 0.01789; 0.01501; 0.01140; 0.00647; 0.00000;-0.00647;-0.01140;-0.01501;-0.01789;-0.02030;-0.02283;-0.02550;-0.02831;-0.03125;-0.03434;-0.03757;-0.04095;-0.04443;-0.04799;-0.05157;-0.05509;-0.05843;-0.06141;-0.06373;-0.06496;-0.06423;-0.06133;-0.05679;-0.05137;-0.04557;-0.03969;-0.03397;-0.02851;-0.02340;-0.01871;-0.01446;-0.01070;-0.00742;-0.00466;-0.00245;-0.00084;-0.00000</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="HorizontalTail_NACA 65-011_2">
+               <name>NACA 65-011</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 0.99975; 0.98214; 0.96312; 0.94256; 0.92035; 0.89633; 0.87037; 0.84228; 0.81190; 0.77901; 0.74341; 0.70487; 0.66312; 0.61788; 0.56885; 0.51569; 0.45807; 0.39783; 0.34131; 0.29237; 0.25001; 0.21335; 0.18164; 0.15421; 0.13049; 0.10999; 0.09227; 0.07696; 0.06375; 0.05235; 0.04252; 0.03405; 0.02677; 0.02052; 0.01414; 0.00797; 0.00262; 0.00000; 0.00262; 0.00796; 0.01413; 0.02052; 0.02677; 0.03405; 0.04251; 0.05234; 0.06375; 0.07696; 0.09227; 0.10998; 0.13049; 0.15421; 0.18164; 0.21335; 0.25001; 0.29236; 0.34130; 0.39782; 0.45807; 0.51569; 0.56885; 0.61788; 0.66312; 0.70487; 0.74341; 0.77901; 0.81189; 0.84228; 0.87037; 0.89633; 0.92035; 0.94256; 0.96312; 0.98214; 0.99975</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector"> 0.00000; 0.00072; 0.00210; 0.00401; 0.00640; 0.00922; 0.01245; 0.01608; 0.02009; 0.02444; 0.02907; 0.03390; 0.03886; 0.04372; 0.04824; 0.05200; 0.05438; 0.05497; 0.05394; 0.05201; 0.04954; 0.04676; 0.04383; 0.04085; 0.03789; 0.03499; 0.03218; 0.02949; 0.02692; 0.02448; 0.02214; 0.01992; 0.01782; 0.01581; 0.01343; 0.01044; 0.00619; 0.00000;-0.00619;-0.01044;-0.01342;-0.01581;-0.01782;-0.01992;-0.02214;-0.02448;-0.02692;-0.02949;-0.03218;-0.03499;-0.03789;-0.04085;-0.04383;-0.04676;-0.04954;-0.05201;-0.05394;-0.05497;-0.05438;-0.05200;-0.04824;-0.04372;-0.03886;-0.03390;-0.02907;-0.02444;-0.02009;-0.01608;-0.01245;-0.00922;-0.00640;-0.00401;-0.00210;-0.00072;-0.00000</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="VerticalTail_LS(1)-0013_1">
+               <name>LS(1)-0013</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.98649; 0.96249; 0.91956; 0.85294; 0.76216; 0.69129; 0.65074; 0.58334; 0.52585; 0.46284; 0.39774; 0.33018; 0.27756; 0.22010; 0.17482; 0.13163; 0.09576; 0.06398; 0.05217; 0.04239; 0.03223; 0.02455; 0.01803; 0.01269; 0.00853; 0.00537; 0.00303; 0.00130; 0.00032; 0.00000; 0.00031; 0.00130; 0.00304; 0.00536; 0.00855; 0.01268; 0.01888; 0.02533; 0.03338; 0.04238; 0.06688; 0.09576; 0.13228; 0.17482; 0.22340; 0.27756; 0.33550; 0.39774; 0.46780; 0.52585; 0.58782; 0.65074; 0.69174; 0.76216; 0.85294; 0.91956; 0.96249; 0.98649; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector"> 0.00302; 0.00391; 0.00541; 0.00940; 0.01821; 0.03242; 0.04310; 0.04862; 0.05614; 0.06063; 0.06342; 0.06433; 0.06377; 0.06225; 0.05906; 0.05518; 0.05013; 0.04465; 0.03823; 0.03526; 0.03239; 0.02892; 0.02576; 0.02241; 0.01902; 0.01574; 0.01241; 0.00912; 0.00592; 0.00294; 0.00000;-0.00287;-0.00591;-0.00913;-0.01241;-0.01576;-0.01902;-0.02288;-0.02612;-0.02934;-0.03239;-0.03890;-0.04465;-0.05021;-0.05518;-0.05929;-0.06225;-0.06387;-0.06433;-0.06328;-0.06063;-0.05571;-0.04862;-0.04303;-0.03242;-0.01821;-0.00940;-0.00541;-0.00391;-0.00302</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="VerticalTail_LS(1)-0013_2">
+               <name>LS(1)-0013</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.98649; 0.96249; 0.91956; 0.85294; 0.76216; 0.69129; 0.65074; 0.58334; 0.52585; 0.46284; 0.39774; 0.33018; 0.27756; 0.22010; 0.17482; 0.13163; 0.09576; 0.06398; 0.05217; 0.04239; 0.03223; 0.02455; 0.01803; 0.01269; 0.00853; 0.00537; 0.00303; 0.00130; 0.00032; 0.00000; 0.00031; 0.00130; 0.00304; 0.00536; 0.00855; 0.01268; 0.01888; 0.02533; 0.03338; 0.04238; 0.06688; 0.09576; 0.13228; 0.17482; 0.22340; 0.27756; 0.33550; 0.39774; 0.46780; 0.52585; 0.58782; 0.65074; 0.69174; 0.76216; 0.85294; 0.91956; 0.96249; 0.98649; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector"> 0.00302; 0.00391; 0.00541; 0.00940; 0.01821; 0.03242; 0.04310; 0.04862; 0.05614; 0.06063; 0.06342; 0.06433; 0.06377; 0.06225; 0.05906; 0.05518; 0.05013; 0.04465; 0.03823; 0.03526; 0.03239; 0.02892; 0.02576; 0.02241; 0.01902; 0.01574; 0.01241; 0.00912; 0.00592; 0.00294; 0.00000;-0.00287;-0.00591;-0.00913;-0.01241;-0.01576;-0.01902;-0.02288;-0.02612;-0.02934;-0.03239;-0.03890;-0.04465;-0.05021;-0.05518;-0.05929;-0.06225;-0.06387;-0.06433;-0.06328;-0.06063;-0.05571;-0.04862;-0.04303;-0.03242;-0.01821;-0.00940;-0.00541;-0.00391;-0.00302</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="VerticalTail_LS(1)-0013_3">
+               <name>LS(1)-0013</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.98649; 0.96249; 0.91956; 0.85294; 0.76216; 0.69129; 0.65074; 0.58334; 0.52585; 0.46284; 0.39774; 0.33018; 0.27756; 0.22010; 0.17482; 0.13163; 0.09576; 0.06398; 0.05217; 0.04239; 0.03223; 0.02455; 0.01803; 0.01269; 0.00853; 0.00537; 0.00303; 0.00130; 0.00032; 0.00000; 0.00031; 0.00130; 0.00304; 0.00536; 0.00855; 0.01268; 0.01888; 0.02533; 0.03338; 0.04238; 0.06688; 0.09576; 0.13228; 0.17482; 0.22340; 0.27756; 0.33550; 0.39774; 0.46780; 0.52585; 0.58782; 0.65074; 0.69174; 0.76216; 0.85294; 0.91956; 0.96249; 0.98649; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector"> 0.00302; 0.00391; 0.00541; 0.00940; 0.01821; 0.03242; 0.04310; 0.04862; 0.05614; 0.06063; 0.06342; 0.06433; 0.06377; 0.06225; 0.05906; 0.05518; 0.05013; 0.04465; 0.03823; 0.03526; 0.03239; 0.02892; 0.02576; 0.02241; 0.01902; 0.01574; 0.01241; 0.00912; 0.00592; 0.00294; 0.00000;-0.00287;-0.00591;-0.00913;-0.01241;-0.01576;-0.01902;-0.02288;-0.02612;-0.02934;-0.03239;-0.03890;-0.04465;-0.05021;-0.05518;-0.05929;-0.06225;-0.06387;-0.06433;-0.06328;-0.06063;-0.05571;-0.04862;-0.04303;-0.03242;-0.01821;-0.00940;-0.00541;-0.00391;-0.00302</z>
+               </pointList>
+            </wingAirfoil>
+            <wingAirfoil uID="VerticalTail_LS(1)-0013_4">
+               <name>LS(1)-0013</name>
+               <description>airfoil extracted from sumo.smx model</description>
+               <pointList>
+                  <x mapType="vector"> 1.00000; 0.98649; 0.96249; 0.91956; 0.85294; 0.76216; 0.69129; 0.65074; 0.58334; 0.52585; 0.46284; 0.39774; 0.33018; 0.27756; 0.22010; 0.17482; 0.13163; 0.09576; 0.06398; 0.05217; 0.04239; 0.03223; 0.02455; 0.01803; 0.01269; 0.00853; 0.00537; 0.00303; 0.00130; 0.00032; 0.00000; 0.00031; 0.00130; 0.00304; 0.00536; 0.00855; 0.01268; 0.01888; 0.02533; 0.03338; 0.04238; 0.06688; 0.09576; 0.13228; 0.17482; 0.22340; 0.27756; 0.33550; 0.39774; 0.46780; 0.52585; 0.58782; 0.65074; 0.69174; 0.76216; 0.85294; 0.91956; 0.96249; 0.98649; 1.00000</x>
+                  <y mapType="vector"> 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000; 0.00000</y>
+                  <z mapType="vector"> 0.00302; 0.00391; 0.00541; 0.00940; 0.01821; 0.03242; 0.04310; 0.04862; 0.05614; 0.06063; 0.06342; 0.06433; 0.06377; 0.06225; 0.05906; 0.05518; 0.05013; 0.04465; 0.03823; 0.03526; 0.03239; 0.02892; 0.02576; 0.02241; 0.01902; 0.01574; 0.01241; 0.00912; 0.00592; 0.00294; 0.00000;-0.00287;-0.00591;-0.00913;-0.01241;-0.01576;-0.01902;-0.02288;-0.02612;-0.02934;-0.03239;-0.03890;-0.04465;-0.05021;-0.05518;-0.05929;-0.06225;-0.06387;-0.06433;-0.06328;-0.06063;-0.05571;-0.04862;-0.04303;-0.03242;-0.01821;-0.00940;-0.00541;-0.00391;-0.00302</z>
+               </pointList>
+            </wingAirfoil>
+         </wingAirfoils>
+         <fuselageProfiles>
+            <fuselageProfile uID="1_FuselageFrame1_1">
+               <name>1_FuselageFrame1</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.50000;   0.86603;   1.00000;   0.86603;   0.50000;   0.00000;  -0.50000;  -0.86603;  -1.00000;  -0.86603;  -0.50000;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.86603;  -0.50000;  -0.00000;   0.50000;   0.86603;   1.00000;   0.86603;   0.50000;  -0.00000;  -0.50000;  -0.86603;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame21_2">
+               <name>1_FuselageFrame21</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">  -0.00000;   0.70153;   0.93256;   1.00000;   0.88493;   0.62576;   0.00000;  -0.62576;  -0.88493;  -1.00000;  -0.93256;  -0.70153;   0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.71871;  -0.35961;   0.06273;   0.54586;   0.82494;   1.00000;   0.82494;   0.54586;   0.06273;  -0.35961;  -0.71871;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame41_3">
+               <name>1_FuselageFrame41</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">  -0.00000;   0.66516;   0.93916;   1.00000;   0.85001;   0.55660;   0.00000;  -0.55660;  -0.85001;  -1.00000;  -0.93916;  -0.66516;   0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.71851;  -0.31889;   0.10546;   0.53092;   0.82374;   1.00000;   0.82374;   0.53092;   0.10546;  -0.31889;  -0.71851;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame3_4">
+               <name>1_FuselageFrame3</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.50000;   0.86603;   1.00000;   0.91336;   0.26774;   0.00000;  -0.26774;  -0.91336;  -1.00000;  -0.86603;  -0.50000;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.86603;  -0.50000;  -0.00000;   0.48493;   0.97419;   1.00000;   0.97419;   0.48493;  -0.00000;  -0.50000;  -0.86603;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrameX234_5">
+               <name>1_FuselageFrameX234</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.53699;   0.89379;   1.00000;   0.88653;   0.64074;   0.34313;  -0.00000;  -0.34313;  -0.64074;  -0.88653;  -1.00000;  -0.89379;  -0.53699;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.90545;  -0.50816;   0.01359;   0.49890;   0.80297;   0.96747;   1.00000;   0.96747;   0.80297;   0.49890;   0.01359;  -0.50816;  -0.90545;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame5_6">
+               <name>1_FuselageFrame5</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.68204;   0.91461;   1.00000;   0.87550;   0.67049;   0.38743;   0.00000;  -0.38743;  -0.67049;  -0.87550;  -1.00000;  -0.91461;  -0.68204;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.85048;  -0.51988;  -0.00389;   0.46684;   0.76490;   0.94100;   1.00000;   0.94100;   0.76490;   0.46684;  -0.00389;  -0.51988;  -0.85048;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrameX368_7">
+               <name>1_FuselageFrameX368</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.40040;   0.67861;   0.82543;   0.94544;   1.00000;   0.99231;   0.90862;   0.74466;   0.49336;   0.00000;  -0.49336;  -0.74466;  -0.90862;  -0.99231;  -1.00000;  -0.94544;  -0.82543;  -0.67861;  -0.40040;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.97173;  -0.87043;  -0.72260;  -0.46074;  -0.07034;   0.15034;   0.47357;   0.73188;   0.90868;   1.00000;   0.90868;   0.73188;   0.47357;   0.15034;  -0.07034;  -0.46074;  -0.72260;  -0.87043;  -0.97173;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame6_8">
+               <name>1_FuselageFrame6</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.25642;   0.48795;   0.70774;   0.87504;   0.96442;   1.00000;   0.98745;   0.92286;   0.82035;   0.69239;   0.50330;   0.26410;   0.00000;  -0.26410;  -0.50330;  -0.69239;  -0.82035;  -0.92286;  -0.98745;  -1.00000;  -0.96442;  -0.87504;  -0.70774;  -0.48795;  -0.25642;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.98745;  -0.94973;  -0.85106;  -0.65760;  -0.38308;  -0.00000;   0.19118;   0.48027;   0.68088;   0.80884;   0.90367;   0.97210;   1.00000;   0.97210;   0.90367;   0.80884;   0.68088;   0.48027;   0.19118;  -0.00000;  -0.38308;  -0.65760;  -0.85106;  -0.94973;  -0.98745;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrameX1134_9">
+               <name>1_FuselageFrameX1134</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.24509;   0.55384;   0.78812;   0.88704;   0.96899;   1.00000;   0.98014;   0.91677;   0.76211;   0.52682;   0.29712;   0.00000;  -0.29712;  -0.52682;  -0.76211;  -0.91677;  -0.98014;  -1.00000;  -0.96899;  -0.88704;  -0.78812;  -0.55384;  -0.24509;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.99929;  -0.95868;  -0.80481;  -0.64163;  -0.33175;  -0.00000;   0.23180;   0.44173;   0.75684;   0.92110;   0.98329;   1.00000;   0.98329;   0.92110;   0.75684;   0.44173;   0.23180;  -0.00000;  -0.33175;  -0.64163;  -0.80481;  -0.95868;  -0.99929;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame507_10">
+               <name>1_FuselageFrame507</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.44089;   0.61762;   0.79858;   0.94176;   0.98929;   1.00000;   0.98668;   0.92298;   0.82037;   0.67092;   0.48545;   0.00000;  -0.48545;  -0.67092;  -0.82037;  -0.92298;  -0.98668;  -1.00000;  -0.98929;  -0.94176;  -0.79858;  -0.61762;  -0.44089;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.98379;  -0.93350;  -0.79456;  -0.48082;  -0.21336;  -0.06970;   0.18538;   0.43464;   0.67122;   0.83287;   0.92910;   1.00000;   0.92910;   0.83287;   0.67122;   0.43464;   0.18538;  -0.06970;  -0.21336;  -0.48082;  -0.79456;  -0.93350;  -0.98379;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame11_11">
+               <name>1_FuselageFrame11</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.44832;   0.75169;   0.91122;   0.95897;   1.00000;   0.95538;   0.84210;   0.66577;   0.42518;   0.00000;  -0.42518;  -0.66577;  -0.84210;  -0.95538;  -1.00000;  -0.95897;  -0.91122;  -0.75169;  -0.44832;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.98053;  -0.84328;  -0.58031;  -0.36773;  -0.00000;   0.31365;   0.62660;   0.83225;   0.94107;   1.00000;   0.94107;   0.83225;   0.62660;   0.31365;  -0.00000;  -0.36773;  -0.58031;  -0.84328;  -0.98053;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrameX2400_12">
+               <name>1_FuselageFrameX2400</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.50549;   0.87383;   1.00000;   0.97635;   0.74697;   0.00367;  -0.74697;  -0.97635;  -1.00000;  -0.87383;  -0.50549;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.93166;  -0.62992;  -0.16642;   0.29473;   0.77107;   1.00000;   0.77107;   0.29473;  -0.16642;  -0.62992;  -0.93166;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame12_13">
+               <name>1_FuselageFrame12</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">  -0.00000;   0.49614;   0.87936;   1.00000;   0.94058;   0.61491;   0.00000;  -0.61491;  -0.94058;  -1.00000;  -0.87936;  -0.49614;   0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.86536;  -0.47260;   0.00479;   0.46313;   0.83528;   1.00000;   0.83528;   0.46313;   0.00479;  -0.47260;  -0.86536;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame13_14">
+               <name>1_FuselageFrame13</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.51658;   0.83847;   1.00000;   0.90696;   0.56591;   0.00000;  -0.56591;  -0.90696;  -1.00000;  -0.83847;  -0.51658;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.90058;  -0.60270;  -0.02495;   0.48748;   0.88112;   1.00000;   0.88112;   0.48748;  -0.02495;  -0.60270;  -0.90058;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame945_15">
+               <name>1_FuselageFrame945</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.30902;   0.58779;   0.80902;   0.95106;   1.00000;   0.95106;   0.80902;   0.58779;   0.30902;   0.00000;  -0.30902;  -0.58779;  -0.80902;  -0.95106;  -1.00000;  -0.95106;  -0.80902;  -0.58779;  -0.30902;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.95106;  -0.80902;  -0.58779;  -0.30902;  -0.00000;   0.30902;   0.58779;   0.80902;   0.95106;   1.00000;   0.95106;   0.80902;   0.58779;   0.30902;  -0.00000;  -0.30902;  -0.58779;  -0.80902;  -0.95106;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+            <fuselageProfile uID="1_FuselageFrame14_16">
+               <name>1_FuselageFrame14</name>
+               <description>body extracted from sumo model</description>
+               <pointList>
+                  <x mapType="vector">   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000;   0.00000</x>
+                  <y mapType="vector">   0.00000;   0.30902;   0.58779;   0.80902;   0.95106;   1.00000;   0.95106;   0.80902;   0.58779;   0.30902;   0.00000;  -0.30902;  -0.58779;  -0.80902;  -0.95106;  -1.00000;  -0.95106;  -0.80902;  -0.58779;  -0.30902;  -0.00000</y>
+                  <z mapType="vector">  -1.00000;  -0.95106;  -0.80902;  -0.58779;  -0.30902;  -0.00000;   0.30902;   0.58779;   0.80902;   0.95106;   1.00000;   0.95106;   0.80902;   0.58779;   0.30902;  -0.00000;  -0.30902;  -0.58779;  -0.80902;  -0.95106;  -1.00000</z>
+               </pointList>
+            </fuselageProfile>
+         </fuselageProfiles>
+      </profiles>
+   </vehicles>
+</cpacs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cpacs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi_noNamespaceSchemaLocation="CPACS_21_Schema.xsd">
+	<toolspecific>
+		    <UNINA_modules>
+		    	<aircraftModelUID>simil_ATR72_ok</aircraftModelUID>
+		    	<aircraftConfiguration>0</aircraftConfiguration><!--0 for Traditional Configuration(W-HT-VT), 1 for New Configuration-->
+				<wings>
+				<WettedParameter>1</WettedParameter><!--0 for evaluating with TIGL function (computationally intensive), 1 for evaluating with approximately function (VALID ONLY FOR TRADITIONAL CONFIGURATION H+VT+HT)-->
+				    <MainWing>
+				        <mainWingUID>MainWingID</mainWingUID>
+					    <material>2</material><!--0 for Composite Material, 1 for Aluminium, 2 for Painted Aluminium-->
+						<transition_point>0.0</transition_point><!--Upper surface transition point: 0 is Leading edge, 1 is trailing edge-->
+					</MainWing>
+					<HorizTail>
+					    <HorizTailUID>HorizontalTailID</HorizTailUID>
+					    <material>2</material><!--0 for Composite Material, 1 for Aluminium, 2 for Painted Aluminium-->
+						<transition_point>0.0</transition_point>
+					</HorizTail>
+					<VerticalTail>
+					    <VerticalTailUID>VerticalTailID</VerticalTailUID>
+					    <material>2</material><!--0 for Composite Material, 1 for Aluminium, 2 for Painted Aluminium-->
+						<transition_point>0.0</transition_point>
+					</VerticalTail>
+					<Airfoils>
+					    <Airfoil_number>5</Airfoil_number><!--Number of airfoils to analyze-->
+					    <airfoil>
+					        <airfoilName>NACA 33015</airfoilName>
+					        <max_thickness>0.15</max_thickness>
+					    </airfoil>
+					    <airfoil>
+					        <airfoilName>NACA 2315</airfoilName>
+					        <max_thickness>0.15</max_thickness>
+					    </airfoil>
+					    <airfoil>
+					        <airfoilName>NACA 65-013</airfoilName>
+					        <max_thickness>0.13</max_thickness>
+					    </airfoil>
+					    <airfoil>
+					        <airfoilName>NACA 65-011</airfoilName>
+					        <max_thickness>0.11</max_thickness>
+					    </airfoil>
+					    <airfoil>
+					        <airfoilName>LS(1)-0013</airfoilName>
+					        <max_thickness>0.13</max_thickness>
+					    </airfoil>
+					</Airfoils>
+			    </wings>
+				<fuselages>
+		    	    <FuselageUID>FuselageID</FuselageUID>
+					<material>1</material><!--0 for Composite Material, 1 for Aluminium, 2 for Painted Aluminium, 3 for Metal, 4 for Refined Metal-->
+					<wettedArea>0</wettedArea><!-- if wetted area=0 is estimated by the module-->
+				</fuselages>
+				<engine>
+		    	    <number>2</number>
+		    	    <nacelle>
+		    	        <length>4.371</length>
+		    	        <diameter>1.4</diameter>
+		    	        <last_section_diameter>0.20</last_section_diameter>
+		    	        <S_wet>25.0</S_wet>
+		    	        <material>2</material><!--0 for Composite Material, 1 for Aluminium, 2 for Painted Aluminium, 3 for Metal, 4 for Refined Metal-->
+		    	    </nacelle>
+		    	</engine>
+		    	<ReferencePoint>
+		    		<description>meters</description>
+		    		<altitude>6000</altitude>
+					<MachNumber mapType="vector">0.43;</MachNumber>
+					<Oswald_Factor>0.82</Oswald_Factor>
+				</ReferencePoint>
+		    </UNINA_modules>
+	</toolspecific>
+</cpacs>

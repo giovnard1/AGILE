@@ -1,0 +1,98 @@
+{
+  "alwaysRun" : true,
+  "commandScriptLinux" : "",
+  "commandScriptWindows" : "python CD0_total.py",
+  "copyToolBehavior" : "once",
+  "cpacsInitialEndpointName" : "CPACS initial",
+  "cpacsOutgoingEndpointName" : "CPACS out",
+  "cpacsResultFilename" : "cpacsResult.xml",
+  "deleteWorkingDirectoriesAfterWorkflowExecution" : true,
+  "documentationFilePath" : "",
+  "dynamicInputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "inputinputHandlingOptions" : [ "Single", "Constant" ],
+    "defaultInputHandling" : "Single",
+    "inputinputExecutionConstraintOptions" : [ "Required", "RequiredIfConnected" ],
+    "defaultInputExecutionConstraint" : "Required",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "dynamicOutputs" : [ {
+    "endpointIdentifier" : "default",
+    "endpointDataTypes" : [ "Boolean", "ShortText", "Integer", "Float" ],
+    "endpointDefaultDataType" : "Float",
+    "endpointMetaData" : {
+      "variable.xpath" : {
+        "guiName" : "XPath",
+        "guiPosition" : "0",
+        "guiGroup" : "XML values",
+        "visibility" : "shown",
+        "defaultValue" : "",
+        "validation" : "required",
+        "persistent" : "true"
+      }
+    }
+  } ],
+  "enableCommandScriptWindows" : true,
+  "groupName" : "CPACS",
+  "hasToolSpecificInput" : false,
+  "imitationScript" : "${out:Return directory} = \"${dir:tool}/ImitationMode/DummyReturnDirectory\"",
+  "imitationToolOutputFilename" : "ImitationMode/dummyOutput.xml",
+  "inputs" : [ {
+    "endpointFolder" : "Input folder",
+    "endpointFileName" : "CPACS_initial.xml",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS initial",
+    "endpointUsage" : "required"
+  } ],
+  "integrationType" : "CPACS",
+  "isActive" : true,
+  "launchSettings" : [ {
+    "limitInstallationInstancesNumber" : "10",
+    "rootWorkingDirectory" : "",
+    "host" : "RCE",
+    "toolDirectory" : "C:\\Users\\Giovanni\\.rce\\default\\integration\\tools\\cpacs\\CD0_total",
+    "limitInstalltionInstances" : "true",
+    "version" : "0.1"
+  } ],
+  "mappingInputFilename" : "mappingInput.xml",
+  "mappingOutputFilename" : "mappingOutput_CD0.xml",
+  "outputs" : [ {
+    "endpointFolder" : "",
+    "endpointFileName" : "",
+    "endpointDataType" : "FileReference",
+    "endpointName" : "CPACS out",
+    "endpointUsage" : "-"
+  }, {
+    "endpointDataType" : "DirectoryReference",
+    "endpointName" : "Return directory",
+    "endpointUsage" : "-"
+  } ],
+  "postScript" : "${out:Return directory} = \"${dir:tool}/ReturnDirectory\"",
+  "preScript" : "",
+  "setToolDirAsWorkingDir" : true,
+  "toolDescription" : "",
+  "toolIconPath" : "",
+  "toolInputFileName" : "ToolInput/toolInput.xml",
+  "toolIntegratorE-Mail" : "",
+  "toolIntegratorName" : "",
+  "toolName" : "CD0_total",
+  "toolOutputFilename" : "ToolOutput/toolOutput.xml",
+  "toolProperties" : {
+    "Default" : { }
+  },
+  "toolspecificInputdataFilename" : "",
+  "toolspecificMappingFilename" : "",
+  "uploadIcon" : true
+}

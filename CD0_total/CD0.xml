@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CD0>
+	<Skin_friction>
+		<CD0_w>
+		    <value unit="">0.0</value>
+            <description unit="">Zero-lift drag coefficient of the wing</description>
+		</CD0_w>
+		<CD0_f>
+		    <value unit="">0.0</value>
+            <description unit="">Zero-lift drag coefficient of the fuselage</description>
+		</CD0_f>
+		<CD0_v>
+		    <value unit="">0.0</value>
+            <description unit="">Zero-lift drag coefficient of the vertical tail</description>
+		</CD0_v>
+		<CD0_h>
+		    <value unit="">0.0</value>
+            <description unit="">Zero-lift drag coefficient of the horizontal tail</description>
+		</CD0_h>
+		<CD0_n>
+		    <value unit="">0.0</value>
+            <description unit="">Zero-lift drag coefficient of the nacelle (only one)</description>
+		</CD0_n>	
+	</Skin_friction>
+	<Miscellaneous_effects>
+	    <CD0_Excrescenses>
+		    <value unit="">0.0</value>
+            <description unit="">Effect of Excrescenses</description>
+		</CD0_Excrescenses>
+		<CD0_Interference>
+		    <value unit="">0.0</value>
+            <description unit="">Effect of Interference (wing-fuselage and wing-nacelle)</description>
+		</CD0_Interference>
+		<CD0_Windshield>
+		    <value unit="">0.0</value>
+            <description unit="">Effect of Windshield</description>
+		</CD0_Windshield>
+		<CD0_BaseDrag>
+		    <value unit="">0.0</value>
+            <description unit="">Effect of BaseDrag (fuselage and nacelles)</description>
+		</CD0_BaseDrag>
+		<CD0_Coolings>
+		    <value unit="">0.0</value>
+            <description unit="">Effect of coolings</description>
+		</CD0_Coolings>
+		<CD0_Upsweep>
+		    <value unit="">0.0</value>
+            <description unit="">Effect of the fuselage upsweep angle</description>
+		</CD0_Upsweep>
+	</Miscellaneous_effects>
+	<Final_Value>
+		<CD0_total>
+			<value unit="">0.0</value>
+            <description unit="">Zero-lift drag coefficient</description>
+		</CD0_total>
+	</Final_Value>
+</CD0>	
